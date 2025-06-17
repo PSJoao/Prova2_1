@@ -2,7 +2,7 @@ FROM php:8.2-apache
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-COPY configapache.conf /etc/apache2/sites-available/000-default.conf
+COPY apachando.conf /etc/apache2/sites-available/000-default.conf
 
 RUN apt-get update && apt-get install -y \
     && docker-php-ext-install mysqli pdo pdo_mysql \
