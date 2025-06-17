@@ -11,5 +11,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN chown -R www-data:www-data /var/www/html/
 RUN chmod -R 755 /var/www/html
+RUN ls /var/www/html/app
+
+
 
 EXPOSE 80
